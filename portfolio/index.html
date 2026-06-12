@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Prabhat Kesharwani - GenAI Engineer & Web Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -13,6 +13,7 @@
       <div class="logo">Prabhat Kesharwani</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -29,6 +30,7 @@
           <span></span>
         </div>
         <div class="menu-links">
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -36,16 +38,16 @@
         </div>
       </div>
     </nav>
+
+    <!-- PROFILE SECTION -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="profile-pic (2).png" alt="Prabhat Kesharwani profile picture" />
+        <img src="images/profile-pic (2).png" alt="Prabhat Kesharwani profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Prabhat Kesharwani</h1>
-        <p class="section__text__p2">Frontend Developer & Programmer 
-
-        </p>
+        <p class="section__text__p2">Associate GenAI Engineer & Full Stack Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -59,13 +61,13 @@
         </div>
         <div id="socials-container">
           <img
-            src="linkedin.png"
+            src="images/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/prabhat-kesharwani-02215b272/'"
           />
           <img
-            src="github.png"
+            src="images/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/prabhat-kesharwani'"
@@ -73,283 +75,483 @@
         </div>
       </div>
     </section>
+
+    <!-- PROFESSIONAL SUMMARY SECTION -->
+    <section id="professional-summary">
+      <p class="section__text__p1">Professional Overview</p>
+      <h1 class="title">Professional Summary</h1>
+      <div class="summary-container">
+        <p class="summary-text">
+          Currently working as an <strong>Associate GenAI Engineer Trainee at Nagarro</strong>, 
+          gaining hands-on experience in developing AI-powered applications, scalable backend systems, 
+          and intelligent automation solutions using <strong>Python, FastAPI, LangChain, LangGraph, 
+          MERN Stack, and Docker</strong>. 
+        </p>
+        <p class="summary-text">
+          Skilled in <strong>Generative AI, Agentic AI workflows, Retrieval-Augmented Generation (RAG), 
+          NLP, RESTful APIs, JWT authentication, and cloud deployment</strong>. Strong foundation in 
+          <strong>Data Structures & Algorithms, Object-Oriented Programming, and full-stack web development</strong>.
+        </p>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text__p1">My Career Journey</p>
+      <h1 class="title">Professional Experience</h1>
+      <div class="experience-container">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Associate GenAI Engineer Trainee</h3>
+            <span class="experience-dates">Feb 2026 - Present</span>
+          </div>
+          <p class="experience-company">🏢 Nagarro Software Pvt Ltd, Gurugram</p>
+          <ul class="experience-list">
+            <li>Developing AI-powered applications using Generative AI, FastAPI, LangChain, LangGraph, and multi-agent AI workflows</li>
+            <li>Building scalable backend systems with RAG pipelines, RESTful APIs, JWT authentication, and modular FastAPI architectures</li>
+            <li>Collaborating in Agile environments to develop and deploy secure AI automation solutions</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Web Development Intern</h3>
+            <span class="experience-dates">Feb 2024 - Mar 2024</span>
+          </div>
+          <p class="experience-company">🏢 Oasis Infobyte, Remote</p>
+          <ul class="experience-list">
+            <li>Created responsive web interfaces using HTML, CSS, and JavaScript with focus on accessibility and user experience</li>
+            <li>Improved functionality and responsiveness across multiple devices and browsers</li>
+          </ul>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+  <!-- ABOUT SECTION -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="aboutimage.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-                <img
-                src="education.png"
+              <img
+                src="images/education.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Pursuing Bachelor's of Technology in <br />
-             Computer Science(Artificial Intelligence & Machine Learning) from <br/> Dr. A.P.J Abdul Kalam University
-             
+              <p>Bachelor of Technology in Computer Science (AI & ML)<br/>
+              JSS Academy of Technical Education, Noida<br/>
+              2022-2026 | CGPA: 9.01</p>
             </div>
             <div class="details-container">
               <img
-                src="education.png"
+                src="images/education.png"
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>Intermediate : Scored 97.8% from Allahabad Public School, Prayagraj (2019-21)</p><br>
-              <p>High School : Scored 90.6% from Little Blossom's Convent  School, Kaushambi (2017-19)</p>
-              
+              <h3>Qualifications</h3>
+              <p><strong>Intermediate:</strong> 97.8% - Allahabad Public School<br/>
+              <strong>High School:</strong> 90.6% - Little Blossom's Convent School</p>
             </div>
           </div>
           <div class="text-container">
             <p id="aboutmematter">
-                My name is prabhat kesharwani. I am very optimistic person, always ready to learn new things. Currently, I am pursuing B.Tech at JSS Academy of Technical Education, Noida. These days, I am exploring various domains of technology like web-development, programming, DSA in Java etc.
+              I'm Prabhat Kesharwani, an Associate GenAI Engineer Trainee at Nagarro 
+              with a passion for building AI-powered solutions. Recently completed my B.Tech 
+              in Computer Science (AI & ML) from JSS Academy with a 9.01 CGPA. I specialize 
+              in Generative AI, LangChain, FastAPI, and RAG pipelines. With 500+ DSA problems 
+              solved and hands-on experience in building multi-agent AI workflows, I'm driven 
+              to create intelligent automation solutions that solve real-world problems.
             </p>
           </div>
         </div>
       </div>
       <img
-        src="arrow.png"
+        src="images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#Skills'"
       />
     </section>
+
+    <!-- SKILLS SECTION -->
     <section id="Skills">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="Skills-details-container">
-        <div class="about-containers">
+        <!-- Programming Languages -->
+        <div class="about-containers skills-row" id="skillsRow1">
           <div class="details-container">
-            <h2 class="Skills-sub-title">Frontend Development</h2>
+            <h2 class="Skills-sub-title">Programming Languages</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Advanced</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>PYTHON</h3><p>Advanced</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Advanced</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>JAVA</h3><p>Advanced</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DSA in Java</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>JAVASCRIPT</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQL</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>API</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>C</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3> Python</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>C++</h3><p>Basic</p></div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Technical Skills</h2>
+            <h2 class="Skills-sub-title">Generative AI & Technologies</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java programming Language</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>LANGGRAPH</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3> C programming Language</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>LANGCHAIN</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>RAG</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>GENERATIVE AI</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>AGENTIC AI</h3><p>Basic</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Prompt Engineering</h3><p>Intermediate</p></div>
               </article>
             </div>
           </div>
         </div>
+
+        <!-- Hidden Skills - Shown on "Show More" -->
+        <div class="about-containers skills-row hidden-skills" id="hiddenSkillsRow1">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>REACT.JS</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>HTML5</h3><p>Advanced</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>CSS3</h3><p>Advanced</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>BOOTSTRAP</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>RESPONSIVE DESIGN</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>API</h3><p>Basic</p></div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>FASTAPI</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>NODE.JS</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>EXPRESS.JS</h3><p>Basic</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>REST APIs</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>PYDANTIC</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>JWT AUTH</h3><p>Basic</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Hidden Skills -->
+        <div class="about-containers skills-row hidden-skills" id="hiddenSkillsRow2">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>MONGODB</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>MYSQL</h3><p>Advanced</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>POSTGRESQL</h3><p>Basic</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQL</h3><p>Advanced</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>MONGODB ATLAS</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>DBMS</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Skills-sub-title">DevOps & Tools</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>DOCKER</h3><p>Advanced</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>GIT</h3><p>Advanced</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>GITHUB</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>POSTMAN</h3><p>Basic</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>VS CODE</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>AWS</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show More Skills Button -->
+        <div class="show-more-btn-container" id="showMoreSkillsBtn">
+          <button class="show-more-btn" onclick="toggleSkills()">
+            <span>Show All Skills</span>
+            <span class="arrow-icon">⬇️</span>
+          </button>
+        </div>
       </div>
       <img
-        src="arrow.png"
+        src="images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <!-- Initial 3 Projects -->
+        <div class="about-containers projects-row" id="projectsRow1">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="images/AiLegal.png" alt="Project 1" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">AI Legal Platform</h2>
+            <p class="project-description">Multi-agent AI workflows for FIR analysis using LangChain & RAG</p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/prabhat-kesharwani/web-development/tree/main/blog/quiz'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://funny-starship-fa9800.netlify.app/'">
+                View Project
               </button>
-              
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="images/Personalfinance.png" alt="Project 2" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Personal Finance Agent</h2>
+            <p class="project-description">AI-powered financial management with intelligent automation</p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/prabhat-kesharwani/web-development/tree/main/.vscode/currency%20converter'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://phenomenal-frangipane-90031c.netlify.app/'">
+                View Project
               </button>
-             
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="images/psu.png" alt="Project 3" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">PSU Intern Portal</h2>
+            <p class="project-description">Complete internship automation system with AI integration</p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/prabhat-kesharwani/web-development/tree/main/meme%20geneartor'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prabhat-kesharwani/Psu_intern_portal'">
+                View Project
               </button>
-              
             </div>
           </div>
         </div>
+
+        <!-- Hidden Projects - Shown on "Show More" -->
+        <div class="about-containers projects-row hidden-projects" id="hiddenProjectsRow1">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/Aichatbot.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">LLM ChatBot</h2>
+            <p class="project-description">Intelligent conversational AI powered by LangChain & FastAPI</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://funny-starship-fa9800.netlify.app/'">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/record.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">E-RECORD</h2>
+            <p class="project-description">Digital record management system with secure authentication</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://erecord-8y62.onrender.com/'">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/airbnb.png" alt="Project 6" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Airbnb Clone</h2>
+            <p class="project-description">Full-stack booking platform built with MERN stack</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://airbnb-tpb1.onrender.com/listings'">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Hidden Projects -->
+        <div class="about-containers projects-row hidden-projects" id="hiddenProjectsRow2">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/health.png" alt="Project 7" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Healthcare Services</h2>
+            <p class="project-description">Healthcare platform with appointment scheduling & records</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://funny-starship-fa9800.netlify.app/'">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/project-2.png" alt="Project 8" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Currency Converter</h2>
+            <p class="project-description">Real-time currency conversion using live exchange APIs</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/prabhat-kesharwani/web-development/tree/main/.vscode/currency%20converter'">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/project3.png" alt="Project 9" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Word Meaning & Pronunciation</h2>
+            <p class="project-description">Dictionary app with pronunciation and example usage</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://verdant-pegasus-0bac4e.netlify.app/'">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show More Projects Button -->
+        <div class="show-more-btn-container" id="showMoreProjectsBtn">
+          <button class="show-more-btn" onclick="toggleProjects()">
+            <span>View All Projects</span>
+            <span class="arrow-icon">⬇️</span>
+          </button>
+        </div>
       </div>
       <img
-        src="arrow.png"
+        src="images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- CONTACT SECTION -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">PrabhatKesharwani1947@gmail.com</a></p>
+          <img src="images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:PrabhatKesharwani27@gmail.com">PrabhatKesharwani27@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/prabhat-kesharwani-02215b272/">LinkedIn</a></p>
+          <img src="images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/prabhat-kesharwani-02215b272/">LinkedIn Profile</a></p>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -361,8 +563,9 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Prabhat kesharwani. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Prabhat Kesharwani. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

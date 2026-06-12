@@ -1,103 +1,589 @@
+
+
+  /* MEDIA QUERIES - RESPONSIVE DESIGN */
+
+/* Large Screens - 1400px and below */
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+    gap: 3rem;
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+
+  .about-containers {
+    flex-wrap: wrap;
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+
+  #contact,
+  #projects,
+  #Skills {
+    height: fit-content;
   }
+
+  section {
+    margin: 0 8rem;
+  }
+}
+
+/* Tablets - 1200px and below */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  #professional-summary,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+    padding: 3rem 0;
+  }
+
+  #professional-summary {
+    margin: 2rem 5% !important;
+    padding: 2.5rem !important;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+  }
+
+  .experience-container {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    height: auto;
+    padding: 1rem 0;
+  }
+}
+
+/* Medium Screens - 768px and below */
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+
+  #socials-container {
+    gap: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-container {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  section {
+    margin: 0 2rem;
+    padding: 2rem 0;
+  }
+
+  #professional-summary {
+    margin: 2rem 2rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .summary-text {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .details-container {
+    padding: 1.2rem;
+  }
+
+  .article-container {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  article {
+    width: 9rem;
+    padding: 0.8rem;
+  }
+
+  article h3 {
+    font-size: 0.8rem;
+  }
+
+  article p {
+    font-size: 0.75rem;
+  }
+
+  .Skills-sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-dates {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .experience-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .project-img {
+    height: 200px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    margin: 0.3rem 0 0.8rem 0;
+  }
+
+  .show-more-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  .contact-info-upper-container {
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+
+  .contact-info-container {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  footer .nav-links {
+    gap: 1.5rem;
+  }
+
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Phones - 600px and below */
+@media screen and (max-width: 600px) {
+  nav {
+    height: auto;
+    padding: 0.8rem;
+    justify-content: space-between;
+  }
+
+  #hamburger-nav {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  #profile {
+    height: 70vh;
+    margin-bottom: 0;
+    padding: 2rem 0;
+  }
+
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .section__text__p1 {
+    font-size: 0.9rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  #socials-container {
+    gap: 1rem;
+  }
+
+  section {
+    margin: 0 1.5rem;
+    padding: 1.5rem 0;
+    height: auto;
+  }
+
+  #professional-summary {
+    margin: 1rem 1.5rem !important;
+    padding: 1rem !important;
+  }
+
+  .summary-text {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+    text-align: justify;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .details-container {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .details-container h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+
+  .details-container p {
+    font-size: 0.9rem;
+  }
+
+  .article-container {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  article h3 {
+    font-size: 0.85rem;
+  }
+
+  article p {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    height: 1.5rem;
+  }
+
+  .Skills-sub-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .Skills-details-container {
+    gap: 1rem;
+  }
+
+  #experience {
+    padding: 1.5rem 0;
+  }
+
+  .experience-container {
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .experience-card {
+    padding: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experience-title {
+    font-size: 1.1rem;
+  }
+
+  .experience-company {
+    font-size: 0.95rem;
+  }
+
+  .experience-dates {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    width: fit-content;
+  }
+
+  .experience-list li {
+    padding: 0.4rem 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .experience-list li:before {
+    font-size: 1rem;
+  }
+
+  .color-container {
+    margin-bottom: 1rem;
+  }
+
+  .project-img {
+    height: 150px;
+    border-radius: 1rem;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+    margin: 0.6rem 0;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    margin: 0.3rem 0 0.6rem 0;
+  }
+
+  .project-btn {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .show-more-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+  }
+
+  #contact {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+
+  .contact-info-container {
+    width: 100%;
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+
+  .contact-info-container p {
+    font-size: 0.95rem;
+  }
+
+  .contact-icon {
+    height: 2rem;
+  }
+
+  footer {
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  footer nav {
+    margin-bottom: 1rem;
+  }
+
+  footer .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  footer .nav-links li a {
+    font-size: 1rem;
+  }
+
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .menu-links {
+    right: -1rem;
+  }
+
+  .menu-links a {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra Small Phones - 375px and below */
+@media screen and (max-width: 375px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+
+  section {
+    margin: 0 1rem;
+  }
+
+  #professional-summary {
+    margin: 1rem 1rem !important;
+    padding: 0.8rem !important;
+  }
+
+  .summary-text {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .experience-card {
+    padding: 1rem;
+  }
+
+  .experience-title {
+    font-size: 1rem;
+  }
+
+  .experience-list li {
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .article-container {
+    gap: 0.8rem;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .show-more-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
